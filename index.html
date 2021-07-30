@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" >
+    <link rel="icon" href="img/icons8-código-48.png">
+    <title>Primera página typescript</title>
+    <script src="https://kit.fontawesome.com/25414846a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div id="wrapper">
+                <div id="sidebar-header">
+                    <button id="sidebar-close"><i class="fas fa-times"></i></button>
+                    <div id="sidebar-title">Options</div>
+                </div>
+                <div id="algorithm-selector">
+
+                    <h4>Select algorithm</h4>
+                    <div id="dropdown">
+                        <select name="algorithms" id="algorithms">
+                            <option value="direct-selection" selected="selected">Direct selection</option>
+                            <option value="direct-insertion">Direct insertion</option>
+                            <option value="bubble-sort">Bubble sort</option>
+                            <option value="cocktail-sort">Cocktail sort</option>
+                            <option value="shell-sort">Shell sort</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <button id="selector"><i class="fas fa-bars"></i></button>
+            <div id="title">SORT ALGORITHMS</div>
+            <button id="night"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+    <main>
+        <!-- Container where sorting will be made -->
+        <div class="main-container">
+            <div class="elements"></div>
+        </div>
+
+        <!-- Errors container -->
+        <div id="err-container">
+            <div id="err-list-container">
+                <ul class="list err-list">
+                </ul>
+            </div>
+        </div>
+
+        <!-- Container for main buttons -->
+        <div class="main-btns">
+            <div class="main-btn-container add-btn-container">
+                <input type="number" class="input-btn add-input" placeholder="Insert number to add...">
+                <button class="main-btn add-btn">Add element</button>
+            </div>
+            <div class="main-btn-container remove-btn-container">
+                <input type="number" class="input-btn remove-input" placeholder="Insert number to remove...">
+                <button class="main-btn remove-btn">Remove element</button>
+            </div>
+            <div class="main-btn-container sort-btn-container">
+                <button class="main-btn sort-btn">Sort!</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script  type="module" src="./js/main.js"></script>
+</html>
