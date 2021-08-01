@@ -267,6 +267,18 @@ main {
     background-color: rgb(246, 246, 246);
 }
 
+.light-sidebar {
+    background-color: rgb(246, 246, 246) !important; 
+}
+
+.light-sidebar-header {
+    border-bottom: 2px solid rgb(35, 39, 42) !important;
+}
+
+.light-sidebar-header-contents {
+    color:rgb(35, 39, 42);
+}
+
 .light-nav-contents {
     color:rgb(35, 39, 42);
 }
